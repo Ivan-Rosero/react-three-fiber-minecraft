@@ -3,6 +3,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import Camera from "./components/Camera.jsx";
 import Lights from "./components/Lights.jsx";
 import Minecraft from "./components/Minecraft.jsx";
+import Scene from "./components/Scene.jsx";
 import { Suspense } from "react";
 import * as THREE from "three"
 
@@ -20,8 +21,8 @@ function App() {
         <Suspense fallback={null}>
           {/* <Matcap /> */}
           {/* <Bricks /> */}
-          <Minecraft />
-          <Environment files={'./../../recursos/hdr/decor_shop_1k.hdr'} />
+          {/* <Minecraft />
+          <Environment files={'./../../recursos/hdr/decor_shop_1k.hdr'} /> */}
         </Suspense>
         {/* <mesh position={[-4, 0, 0]}>
           <torusKnotGeometry args={[1, 0.3, 100, 100]} />
